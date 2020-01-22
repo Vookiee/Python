@@ -1,3 +1,7 @@
 import moduls
-moduls.dela(7,11)
+
+def main():
+    moduls.dela(2,5)
+    moduls.gissaNummer()
     
+main()
