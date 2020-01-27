@@ -15,19 +15,24 @@ def meny ():
     
     while not svar == "":
         if svar == "1":
-            choice.readFile()
-            choice.tillbaka()
+            choice.readFile('personer.csv', 'Labb2/')
+            tillbaka()
+            break
         elif svar == "2":
             print("hej")
+            tillbaka()
             break
         elif svar == "3": 
             print("hell") 
+            tillbaka()
             break 
         elif svar == "4":
             print("abc")
+            tillbaka()
             break
         elif svar == "5":  
             print("123")
+            tillbaka()
         else: 
             break                       
       
@@ -35,5 +40,7 @@ def tillbaka():
     svar = input("Vill du gå tillbaka till menyn? Y/N: ")
     if svar == "Yes" or svar == "y" or svar == "Y":
         main()
+           
              
 main()
+
