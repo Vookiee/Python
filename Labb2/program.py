@@ -15,7 +15,7 @@ def meny ():
     
     while not svar == "":
         if svar == "1":
-            choice.readFile('personer.csv', 'Labb2/')
+            choice.readFile('personer.csv', 'Python/Labb2/')
             tillbaka()
             break
         elif svar == "2":
