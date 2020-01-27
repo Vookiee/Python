@@ -15,7 +15,7 @@ def meny ():
     
     while not svar == "":
         if svar == "1":
-            choice.readFile('personer.csv', 'Python/Labb2/')
+            choice.readFile('personer.csv', 'files/')
             tillbaka()
             break
         elif svar == "2":
@@ -38,7 +38,7 @@ def meny ():
       
 def tillbaka():
     svar = input("Vill du gå tillbaka till menyn? Y/N: ")
-    if svar == "Yes" or svar == "y" or svar == "Y":
+    if svar == "Yes" or svar == "y" or svar == "Y" or svar =="yes":
         main()
            
              
