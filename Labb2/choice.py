@@ -1,10 +1,9 @@
 import json
-
+users = []
 
 def readFile(filename, path="./"):
     fileLocation = path + filename
     lines = []
-    users = []
     try:
         with open(fileLocation, encoding="utf-8") as file_obj:
             for line in file_obj:
@@ -25,6 +24,7 @@ def readFile(filename, path="./"):
     
     for x in users:
         print(x)
+    return users
 
     # [x.split(";")[1] for x in lines]
     # for x in users:
@@ -39,5 +39,42 @@ def readFile(filename, path="./"):
     #         users
     #     ]
     #     print(newList)
-def savePersoner():
+def savePersoner(filename):
+    try:
+        with open (filename, "w", encoding="utf-8") as saveP:
+            json.dump(users,saveP, ensure_ascii=False, indent=4)
+    except FileNotFoundError as error:
+        print(error)
+        
+def readPersoner(filename):
+    try:
+        with open(filename, "r", encoding="utf-8") as readP:
+            lines = json.load(readP)
+            return lines
+    except FileNotFoundError as error:
+        print(error)   
+        
+def addPerson():
+    namn = input("Skriv in nytt namn: ")  
+    enamn = input("Skriv in efternamn: ")   
+    user = input("Skriv in nytt användarnamn: ")   
+    mejl = input("Skriv in nytt mejl: ")  
+    users.append({
+        "namn": namn,
+        "Efternamn":enamn,
+        "Användarnamn":user,
+        "Mail":mejl
+    })   
+def delPerson():
+    user = input("Skriv in användarnamnet du vill ta bort: ")
+    for x in range(0, len(users)):
+        if(user == users({"Användarnamn"})):
+            del users["namn"]
+            del users["Efternamn"]
+            del users["Användarnamn"]
+            del users["Mail"]
+            
+    
+            
+    
     
