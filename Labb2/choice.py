@@ -13,18 +13,18 @@ def readFile(filename, path="./"):
         print(ferr)
         return None
 
-    # for line in lines:
-    #     print(line.rstrip("\n"))
+    for line in lines:
+        print(line.rstrip("\n"))
 
     for x in lines:
-        info = x.split(";")
+        info = x.rstrip("\n").split(";")
         users.append({"namn": info[0],
                     "Efternamn": info[1],
                  "Användarnamn": info[2],
                      "Mail": info[3]})
     
     for x in users:
-        print(x.rstrip("\n"))
+        print(x)
 
     # [x.split(";")[1] for x in lines]
     # for x in users:
@@ -39,3 +39,5 @@ def readFile(filename, path="./"):
     #         users
     #     ]
     #     print(newList)
+def savePersoner():
+    
