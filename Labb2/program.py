@@ -16,6 +16,7 @@ def meny ():
     while not svar == "":
         if svar == "1":
             users = choice.readFile('personer.csv', 'files/')
+            
             tillbaka()
             break
         elif svar == "2":
@@ -25,19 +26,19 @@ def meny ():
             break
         elif svar == "3": 
             choice.addPerson()
-            choice.savePersoner('personer.json')
             
             tillbaka()
             break 
         elif svar == "4":
             choice.delPerson()
+            
             tillbaka()
             break
         elif svar == "5":  
             choice.savePersoner('personer.json')
             tillbaka()
-        else: 
-            break                       
+        elif svar == "6": 
+            sys.exit()                    
       
 def tillbaka():
     svar = input("Vill du gå tillbaka till menyn? Y/N: ")
