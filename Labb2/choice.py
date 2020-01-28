@@ -36,6 +36,5 @@ def readFile(filename, path="./"):
     for x in lines:
         newList = [
             users
-            
         ]
-        print(newList[0])
+        print(newList)
