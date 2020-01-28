@@ -15,7 +15,7 @@ def meny ():
     svar = input("Välj ett alternativ: ")
     while not svar == "":
         if svar == "1":
-            users = choice.readFile('personer.csv', 'files/')
+            choice.readFile('personer.csv', 'files/')
             
             tillbaka()
             break
@@ -26,12 +26,11 @@ def meny ():
             break
         elif svar == "3": 
             choice.addPerson()
-            
             tillbaka()
             break 
         elif svar == "4":
             choice.delPerson()
-            
+            choice.savePersoner('personer.json')
             tillbaka()
             break
         elif svar == "5":  

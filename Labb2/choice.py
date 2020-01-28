@@ -12,9 +12,6 @@ def readFile(filename, path="./"):
         print(ferr)
         return None
 
-    for line in lines:
-        print(line.rstrip("\n"))
-
     for x in lines:
         info = x.rstrip("\n").split(";")
         users.append({"namn": info[0],
@@ -26,24 +23,9 @@ def readFile(filename, path="./"):
         print(x)
     return users
 
-    # [x.split(";")[1] for x in lines]
-    # for x in users:
-    #     users["Efternamn"] = [x]
-
-    # [x.split(";")[2] for x in lines]
-    # for x in users:
-    #     users["Användarnamn"] = [x]
-
-    # for x in lines:
-    #     newList = [
-    #         users
-    #     ]
-    #     print(newList)
-
-
 def savePersoner(filename):
     try:
-        with open(filename, "w", encoding="utf-8") as saveP:
+        with open(filename, "w", encoding="utf-8") as saveP:   
             json.dump(users, saveP, ensure_ascii=False, indent=4)
     except FileNotFoundError as error:
         print(error)
@@ -76,6 +58,5 @@ def delPerson():
     for i in range(len(users)):
         if user1 == users[i]["Efternamn"]:
             del users[i]
-            break
             
         
