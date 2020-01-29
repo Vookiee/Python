@@ -1,5 +1,6 @@
 import choice
 import sys
+
 def main ():
     meny()
     
@@ -13,7 +14,8 @@ def meny ():
     print("5. Spara fil")
     print("6. Avsluta")
     svar = input("Välj ett alternativ: ")
-    while not svar == "":
+    
+    while not svar == "":    
         if svar == "1":
             choice.readFile('personer.csv', 'files/')
             
@@ -22,23 +24,23 @@ def meny ():
         elif svar == "2":
             visa = choice.readPersoner('personer.json')
             print(visa)
-            choice.savePersoner('personer.json')
             tillbaka()
             break
         elif svar == "3": 
+            choice.readPersoner('personer.json')
             choice.addPerson()
             tillbaka()
             break 
         elif svar == "4":
+            choice.readPersoner('personer.json')
             choice.delPerson()
-            choice.savePersoner('personer.json')
             tillbaka()
             break
         elif svar == "5":  
             choice.savePersoner('personer.json')
             tillbaka()
         elif svar == "6": 
-            sys.exit()                    
+            sys.exit(0)                    
       
 def tillbaka():
     svar = input("Vill du gå tillbaka till menyn? Y/N: ")

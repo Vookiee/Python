@@ -1,18 +1,16 @@
 import json
 users = []
-lines = []
-
 
 def readFile(filename, path="./"):
+    global users
+
     fileLocation = path + filename
     try:
         with open(fileLocation, encoding="utf-8") as personer:
-            for line in personer:
-                lines.append(line)
+            lines = personer.readlines()
     except FileNotFoundError as ferr:
         print(ferr)
         return None
-
     for x in lines:
         info = x.rstrip("\n").split(";")
         users.append({"namn": info[0],
@@ -33,6 +31,7 @@ def savePersoner(filename):
 
 
 def readPersoner(filename):
+    global users
     try:
         with open(filename, encoding="utf-8") as readP:
             users = json.load(readP)
@@ -43,6 +42,7 @@ def readPersoner(filename):
 
 
 def addPerson():
+    global users
     namn = input("Skriv in nytt namn: ")
     enamn = input("Skriv in efternamn: ")
     user = input("Skriv in nytt användarnamn: ")
@@ -60,3 +60,4 @@ def delPerson():
     for i in range(len(users)):
         if user1 == users[i]["Efternamn"]:
             del users[i]
+            break
