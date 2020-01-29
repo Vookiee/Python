@@ -22,6 +22,7 @@ def meny ():
         elif svar == "2":
             visa = choice.readPersoner('personer.json')
             print(visa)
+            choice.savePersoner('personer.json')
             tillbaka()
             break
         elif svar == "3": 

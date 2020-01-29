@@ -2,11 +2,12 @@ import json
 users = []
 lines = []
 
+
 def readFile(filename, path="./"):
     fileLocation = path + filename
     try:
-        with open(fileLocation, encoding="utf-8") as file_obj:
-            for line in file_obj:
+        with open(fileLocation, encoding="utf-8") as personer:
+            for line in personer:
                 lines.append(line)
     except FileNotFoundError as ferr:
         print(ferr)
@@ -21,11 +22,11 @@ def readFile(filename, path="./"):
 
     for x in users:
         print(x)
-    return users
+
 
 def savePersoner(filename):
     try:
-        with open(filename, "w", encoding="utf-8") as saveP:   
+        with open(filename, "w", encoding="utf-8") as saveP:
             json.dump(users, saveP, ensure_ascii=False, indent=4)
     except FileNotFoundError as error:
         print(error)
@@ -33,9 +34,10 @@ def savePersoner(filename):
 
 def readPersoner(filename):
     try:
-        with open(filename, "r", encoding="utf-8") as readP:
-            lines = json.load(readP)
-            return lines
+        with open(filename, encoding="utf-8") as readP:
+            users = json.load(readP)
+            return users
+
     except FileNotFoundError as error:
         print(error)
 
@@ -58,5 +60,3 @@ def delPerson():
     for i in range(len(users)):
         if user1 == users[i]["Efternamn"]:
             del users[i]
-            
-        
