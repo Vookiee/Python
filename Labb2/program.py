@@ -18,7 +18,6 @@ def meny ():
     while not svar == "":    
         if svar == "1":
             choice.readFile('personer.csv', 'files/')
-            
             tillbaka()
             break
         elif svar == "2":

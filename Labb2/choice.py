@@ -6,7 +6,7 @@ def readFile(filename, path="./"):
 
     fileLocation = path + filename
     try:
-        with open(fileLocation, encoding="utf-8") as personer:
+        with open(fileLocation,"r", encoding="utf-8") as personer:
             lines = personer.readlines()
     except FileNotFoundError as ferr:
         print(ferr)
