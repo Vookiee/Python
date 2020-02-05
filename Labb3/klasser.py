@@ -38,31 +38,39 @@ class Api():
     def __init__(self):
         
         def searchMovie(self):
-            svar = input("sök film: ")
+            svar = input("1. Sök film: ")
             movies = requests.get(f'http://www.omdbapi.com/?i=tt3896198&apikey=715f40c0&s={svar}')
             data = movies.json()
             try:
                 with open('file.json', 'w',encoding="utf-8") as volkan:
                     w = json.dumps(data, ensure_ascii=False, indent=7)
                     volkan.write(w)
-                    print(w)
             except FileNotFoundError as error:
                 print(error)
+            values = data['Search'] 
+            count = 0
+            for i in values:
+                count += 1
+                print(count,i['Title'])   
         searchMovie(self)
         def chooseMovie(self):
-            svar = input('Välj film: ')
+            svar = int(input('1.1 Välj film: '))
             try:
-                with open('file.json') as volkan_json: 
-                    
+                with open('file.json') as volkan_json:
                     data = json.load(volkan_json)
-                    for p in data:
-                        if p["Search"] == svar:
-                            print (p)
-                        
+                    val = data.get('Search')[svar-1]
+                    print(val)       
             except ValueError as error:
-                print(error)            
+                print(error)
+            try:
+                with open('historik.json','a',encoding='utf-8') as savejson:
+                    json.dump(val,savejson, ensure_ascii=False, indent=7)
+            except FileNotFoundError as ferror:
+                print(ferror)          
+                          
                     
         chooseMovie(self)        
-                
+        #def visaHistorik(self):
+
         
                 
