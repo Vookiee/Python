@@ -63,13 +63,13 @@ class Api():
                 with open('file.json', encoding='utf-8') as volkan_json:
                     filmer = json.load(volkan_json)
                     val = filmer.get('Search')[svar-1]
-                    choice.append(val['Title'])
+                    choice.append(val)
                     
             except ValueError as error:
                 print(error)
             try:
                 with open('historik.json','w',encoding='utf-8') as savejson:
-                   json.dump(val, savejson, ensure_ascii=False, indent = 7)
+                   json.dump(choice, savejson, ensure_ascii=False, indent = 7)
             except FileNotFoundError as ferror:
                 print(ferror)          
         chooseMovie(self)        
@@ -99,12 +99,31 @@ class undermeny():
                     menyTwo(self)
                     break
                 elif svar == "2":
-                    showHist()
+                    #showHist()
+                    uVal()
                     menyTwo(self)
                     break
                 elif svar == "3":
                     Choices()
-        menyTwo(self)            
+        menyTwo(self)
+class uVal():
+    def __init__(self):
+        def underVal(self):
+            
+            try:
+                with open('historik.json', 'r',encoding="utf-8") as hfile:
+                    hist = json.load(hfile)
+                    print(hist)
+            except FileNotFoundError as error:
+                print(error)
+            values = hist['Search'] 
+            count = 0
+            for i in values:
+                count += 1
+                print(count,i['Title'],i['Year'])
+        underVal(self)
+            
+                    
                     
                     
                  

@@ -1,7 +1,9 @@
-{
-       "Title": "James White",
-       "Year": "2015",
-       "imdbID": "tt4288636",
-       "Type": "movie",
-       "Poster": "https://m.media-amazon.com/images/M/MV5BMjE4MzU2NjEwN15BMl5BanBnXkFtZTgwNDQyMDE3NjE@._V1_SX300.jpg"
-}
+[
+       {
+              "Title": "The Assassination of Jesse James by the Coward Robert Ford",
+              "Year": "2007",
+              "imdbID": "tt0443680",
+              "Type": "movie",
+              "Poster": "https://m.media-amazon.com/images/M/MV5BMTY2NDI2MTc2NV5BMl5BanBnXkFtZTcwNjA2NTQzMw@@._V1_SX300.jpg"
+       }
+]
