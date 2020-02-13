@@ -1,76 +1,76 @@
 {
        "Search": [
               {
-                     "Title": "The Lord of the Rings: The Fellowship of the Ring",
-                     "Year": "2001",
-                     "imdbID": "tt0120737",
+                     "Title": "The Incredible Hulk",
+                     "Year": "2008",
+                     "imdbID": "tt0800080",
                      "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg"
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_SX300.jpg"
               },
               {
-                     "Title": "The Lord of the Rings: The Return of the King",
+                     "Title": "Hulk",
                      "Year": "2003",
-                     "imdbID": "tt0167260",
+                     "imdbID": "tt0286716",
                      "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BMzQwZDg1MGEtN2E5My00ZDJlLWI4MzItM2U2MjJhYzlkNmEzXkEyXkFqcGdeQXVyNDAxNjkxNjQ@._V1_SX300.jpg"
               },
               {
-                     "Title": "The Lord of the Rings: The Two Towers",
-                     "Year": "2002",
-                     "imdbID": "tt0167261",
+                     "Title": "Planet Hulk",
+                     "Year": "2010",
+                     "imdbID": "tt1483025",
                      "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BNGE5MzIyNTAtNWFlMC00NDA2LWJiMjItMjc4Yjg1OWM5NzhhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BYmFlNTNhNjktNDQ4NC00ZmVhLTg2NmYtOWExMmI0MzQ1ODFmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
               },
               {
-                     "Title": "Lord of War",
-                     "Year": "2005",
-                     "imdbID": "tt0399295",
-                     "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTYzZWE3MDAtZjZkMi00MzhlLTlhZDUtNmI2Zjg3OWVlZWI0XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"
+                     "Title": "The Incredible Hulk",
+                     "Year": "1977–1982",
+                     "imdbID": "tt0077031",
+                     "Type": "series",
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BODc3YTIwY2ItMDU3MS00ZTFlLWJjOTAtNmE4M2M0NWI4MWE1XkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg"
               },
               {
-                     "Title": "The Lord of the Rings",
-                     "Year": "1978",
-                     "imdbID": "tt0077869",
+                     "Title": "Hulk Vs.",
+                     "Year": "2009",
+                     "imdbID": "tt1325753",
                      "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BOGMyNWJhZmYtNGQxYi00Y2ZjLWJmNjktNTgzZWJjOTg4YjM3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTc1NzMzMzU4Nl5BMl5BanBnXkFtZTcwNTQ3NDYwNQ@@._V1_SX300.jpg"
               },
               {
-                     "Title": "Lord of the Flies",
+                     "Title": "The Incredible Hulk Returns",
+                     "Year": "1988",
+                     "imdbID": "tt0095368",
+                     "Type": "movie",
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTI5NjQ0NzczN15BMl5BanBnXkFtZTcwNzM1ODMyMQ@@._V1_SX300.jpg"
+              },
+              {
+                     "Title": "The Incredible Hulk",
+                     "Year": "1996–1998",
+                     "imdbID": "tt0115215",
+                     "Type": "series",
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BYmVjYzA3MmYtZjBhOS00OGI5LWIzZTEtOTRkZGY2ZWQ5NjkzXkEyXkFqcGdeQXVyNzMzMjU5NDY@._V1_SX300.jpg"
+              },
+              {
+                     "Title": "Hulk and the Agents of S.M.A.S.H.",
+                     "Year": "2013–2015",
+                     "imdbID": "tt2455514",
+                     "Type": "series",
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTg1MzIxMzM4Nl5BMl5BanBnXkFtZTcwMTg3Mzc5OQ@@._V1_SX300.jpg"
+              },
+              {
+                     "Title": "The Trial of the Incredible Hulk",
+                     "Year": "1989",
+                     "imdbID": "tt0098512",
+                     "Type": "movie",
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BZDg3NmYwMDQtNTE5MC00NDFlLWI3YjktMWNjZDlkZWVmOWRiXkEyXkFqcGdeQXVyMTg2NjYzOA@@._V1_SX300.jpg"
+              },
+              {
+                     "Title": "The Death of the Incredible Hulk",
                      "Year": "1990",
-                     "imdbID": "tt0100054",
+                     "imdbID": "tt0099387",
                      "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BMDczN2I3NzItNjdlMS00YmNhLTkyODQtZGI1YWQ0NmViMTgwXkEyXkFqcGdeQXVyNjMwMjk0MTQ@._V1_SX300.jpg"
-              },
-              {
-                     "Title": "Greystoke: The Legend of Tarzan, Lord of the Apes",
-                     "Year": "1984",
-                     "imdbID": "tt0087365",
-                     "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BM2NmYjZjOGItYTQ0ZC00YjcyLTk3MWUtYzdmZjY1MGNkMDViXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg"
-              },
-              {
-                     "Title": "Lord of the Flies",
-                     "Year": "1963",
-                     "imdbID": "tt0057261",
-                     "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BOGEwYTlhMTgtODBlNC00ZjgzLTk1ZmEtNmNkMTEwYTZiM2Y0XkEyXkFqcGdeQXVyMzU4Nzk4MDI@._V1_SX300.jpg"
-              },
-              {
-                     "Title": "Lord of Illusions",
-                     "Year": "1995",
-                     "imdbID": "tt0113690",
-                     "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BNDg1OTc0MDQwNl5BMl5BanBnXkFtZTcwMjQ3NDk0NA@@._V1_SX300.jpg"
-              },
-              {
-                     "Title": "Something the Lord Made",
-                     "Year": "2004",
-                     "imdbID": "tt0386792",
-                     "Type": "movie",
-                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTIzNTE0NjU4N15BMl5BanBnXkFtZTcwNjgyNDcyMQ@@._V1_SX300.jpg"
+                     "Poster": "https://m.media-amazon.com/images/M/MV5BMTU5OTA1OTkwNV5BMl5BanBnXkFtZTcwODM3ODkyMQ@@._V1_SX300.jpg"
               }
        ],
-       "totalResults": "526",
+       "totalResults": "74",
        "Response": "True"
 }
