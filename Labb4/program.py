@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from flask import request
 import sqlite3
 import http.server
+import json
 
 app = Flask(__name__,template_folder='index')
 
@@ -10,10 +11,10 @@ def index():
     return render_template('index.html')
 
 
-# @app.route('/register', methods=['POST'])
-# def register():
-#     print(request.form.values)
-#     print(request.form.get('payment', 'Not set'))
+@app.route('/signup', methods=['GET'])
+def signup():
+    print(request.form.values)
+    print(request.form.get('payment', 'Not set'))
     
     
 # app.run(host='0.0.0.0', port = 5000)
