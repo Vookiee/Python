@@ -44,7 +44,7 @@
             </label>
             Förnamn:
             <label>
-                <input type="text" name="förnamn" required />
+                <input id ="fornamn" type="text" name="fornamn" required />
             </label>
             Efternamn:
             <label>
@@ -117,7 +117,7 @@
             const form = document.querySelector('form');
             const postData = Object.values(form).reduce((obj,field) => { obj[field.name] = field.value; return obj }, {});
             console.log(postData);
-            sendData('signup.db', postData)
+            sendData('http://localhost:5000', postData)
                 .then((data) => {
                 console.log(data); // JSON data parsed by `response.json()` call
             });

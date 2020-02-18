@@ -1,7 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 from flask import request
 import sqlite3
-import http.server
 import json
 
 app = Flask(__name__,template_folder='index')
@@ -11,12 +10,16 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/signup', methods=['GET'])
-def signup():
-    print(request.form.values)
-    print(request.form.get('payment', 'Not set'))
-    
-    
-# app.run(host='0.0.0.0', port = 5000)
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+@app.route('/volkan', methods =['GET'])
+def signup(data= None):
+    hej = sqlite3.connect('signup.db')
+    volkan = hej.cursor()
+    volkan.execute('SELECT fornamn, id FROM users')
+    users = volkan.fetchall()
+    nousers = len(users)
+    return render_template('index.html', username = data, users = users, len = nousers)
+
+@app.route('/', methods = ['POST'])
+def volkan():
+    print(request.form)
+    return { 'status' : f'Added user with username: {request.form.get("fornamn")}' }
